@@ -1,0 +1,16 @@
+* Notes
+
+** Emacs Shortcuts
+
+
+
+* Tasks
+
+** Setup CMake
+   CLOCK: [2018-01-04 Thu 13:29]--[2018-01-04 Thu 14:15] =>  0:46
+
+- link to tutorial: http://derekmolloy.ie/hello-world-introductions-to-cmake/
+- read tutorial and setup cmake
+
+
+**
