@@ -35,6 +35,6 @@ int main()
     streamsize prec = cout.precision();
     cout << "Your final grade is "<< setprecision(3)
          << 0.2 * midterm + 0.4 * sum/count
-         <<setprecision(prec) << endl;
+         << setprecision(prec) << endl;
         return 0;
 }

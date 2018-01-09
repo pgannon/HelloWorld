@@ -2,9 +2,116 @@
 
 ** Emacs Shortcuts
 
+Save |  Ctrl-X ,  Ctrl-S
+
+Clear Buffers | Ctrl-X , 1
+
+Split Vert| Ctrl-X , 3
+
+Split Hor | Ctrl-X , 2
+
+Directory | Ctrl-X , Ctrl-D
+
+Compiling | Ctrl-C , Ctrl-C
+
+Shell | Alt-X , "Shell"
+
+Change Buffers | Ctrl-X , B
+
+Kill Buffer | Ctrl-X , K
+
+Exit Emacs | Ctrl-X , Ctrl-C
+
+Undo | Ctrl-X , U
+
+Copy | Alt-W
+
+Paste | Ctrl-Y
+
+Cut | Ctrl-W
+
+Delete Line | Crtl-K
+
+Clock In | Ctrl-C , Ctrl-X , Ctrl-I
+
+Clock Out | Ctrl-C , Ctrl-X , Ctrl-O
+
+End-of-file | Ctrl-D
+
+
+
+** Emails From MC
+
+--------------------------------------------------------------------------------
+1. copy files from green USB key for boost and wt. copy them into ~/Development.
+2. unpack boost:
+
+tar -xaf boost_1_66_0.tar.bz2
+
+3. build boost:
+
+cd boost_1_66_0/
+./bootstrap.sh
+./b2 --prefix=/home/marco/local
+./b2 --prefix=/home/marco/local --install
+
+replace "marco" with your username, here and on all other commands below.
+
+4. when boost is finished, you can start with witty. unpack witty:
+
+tar -xaf witty-4.0.2.tar.gz
+
+5. build witty:
+
+cd wt-4.0.2
+set CMAKE_INCLUDE_PATH=/home/marco/local/include
+set CMAKE_LIBRARY_PATH=/home/marco/local/lib
+mkdir build
+cmake ..
+make -j 2
+make install
+
+6. create a new project, and add the following to the CMake file (in
+addition to what you normally add) add the following:
+
+6.1 after the project:
+
+find_package(Wt REQUIRED)
+
+6.2 after the target (e.g. the line with target_link_libraries):
+
+target_link_libraries(PROJECT ${Wt_LIBRARIES})
+
+7. manually copy the contents of this file:
+
+https://www.webtoolkit.eu/wt/src/hello
+
+8. build and run it. you need to run it with the following parameters:
+
+./PROJECT  --docroot . --http-address 0.0.0.0 --http-port 8080
+
+9. go to chrome and type:
+
+http://localhost:8080
+
+if all goes well you should see the hello world.
+----------------------------------------------------------------------------------
 
 
 * Tasks
+
+#+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
+#+CAPTION: Clock summary at [2018-01-08 Mon 14:32]
+| <75>                                                                        |        |      |   |       |
+| Headline                                                                    | Time   |      |   |     % |
+|-----------------------------------------------------------------------------+--------+------+---+-------|
+| *Total time*                                                                | *4:12* |      |   | 100.0 |
+|-----------------------------------------------------------------------------+--------+------+---+-------|
+| Tasks                                                                       | 4:12   |      |   | 100.0 |
+| Setup CMake                                                                 |        | 0:46 |   |  18.3 |
+| Temp Name (WT, Boost, Book task)                                            |        | 3:26 |   |  81.7 |
+#+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
+#+end:
 
 ** Setup CMake
    CLOCK: [2018-01-04 Thu 13:29]--[2018-01-04 Thu 14:15] =>  0:46
@@ -12,5 +119,12 @@
 - link to tutorial: http://derekmolloy.ie/hello-world-introductions-to-cmake/
 - read tutorial and setup cmake
 
+** Reviewing yesterdays Grades task
+   CLOCK: [2018-01-09 Tue 09:48]--[2018-01-09 Tue 12:01] =>  2:13
 
-**
+-Changing small parts of the code and seeing the results
+-Double: next level of float. More decimal places (kinda)
+-setPrecision: Sets the decimal precision to be used to format floating-point
+values on output operations.
+
+** Installed Wt
