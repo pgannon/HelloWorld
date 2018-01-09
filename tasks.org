@@ -101,15 +101,16 @@ if all goes well you should see the hello world.
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-08 Mon 14:32]
+#+CAPTION: Clock summary at [2018-01-09 Tue 14:21]
 | <75>                                                                        |        |      |   |       |
 | Headline                                                                    | Time   |      |   |     % |
 |-----------------------------------------------------------------------------+--------+------+---+-------|
-| *Total time*                                                                | *4:12* |      |   | 100.0 |
+| *Total time*                                                                | *3:49* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+--------+------+---+-------|
-| Tasks                                                                       | 4:12   |      |   | 100.0 |
-| Setup CMake                                                                 |        | 0:46 |   |  18.3 |
-| Temp Name (WT, Boost, Book task)                                            |        | 3:26 |   |  81.7 |
+| Tasks                                                                       | 3:49   |      |   | 100.0 |
+| Setup CMake                                                                 |        | 0:46 |   |  20.1 |
+| Reviewing yesterdays Grades task                                            |        | 2:13 |   |  58.1 |
+| Copy across hello world from wt (And how to run wt)                         |        | 0:50 |   |  21.8 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end:
 
@@ -128,3 +129,9 @@ if all goes well you should see the hello world.
 values on output operations.
 
 ** Installed Wt
+** Copy across hello world from wt (And how to run wt)
+   CLOCK: [2018-01-09 Tue 14:10]--[2018-01-09 Tue 14:21] =>  0:11
+   CLOCK: [2018-01-09 Tue 13:30]--[2018-01-09 Tue 14:09] =>  0:39
+
+- To run:
+./hellowt --docroot . --http-listen 0.0.0.0:8080
