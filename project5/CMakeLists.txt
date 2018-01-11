@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8.9)
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR})
+project(project5)
+find_package(Wt REQUIRED)
+include_directories($ENV{CMAKE_INCLUDE_PATH})
+add_executable(project5 homeTask.cpp)
+target_link_libraries(project5 ${Wt_LIBRARIES})

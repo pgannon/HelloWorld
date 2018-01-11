@@ -1,16 +1,16 @@
 #include "HelloApplication.hpp"
 
+
 HelloApplication::HelloApplication(const Wt::WEnvironment& env)
   : WApplication(env)
 {
   setTitle("Hello world");                            // application title
 
-  root()->addWidget(Wt::cpp14::make_unique<Wt::WText>("Hey! What's your name?")); // show some text
-
+  root()->addWidget(Wt::cpp14::make_unique<Wt::WText>("Enter a Number: ")); // show some text
   nameEdit_ = root()->addWidget(Wt::cpp14::make_unique<Wt::WLineEdit>()); // allow text input
   nameEdit_->setFocus();                              // give focus
 
-  auto greetBut = root()->addWidget(Wt::cpp14::make_unique<Wt::WPushButton>("Greet me."));
+  auto greetBut = root()->addWidget(Wt::cpp14::make_unique<Wt::WPushButton>("Add."));
  
                                                       // create a button
   greetBut->setMargin(10, Wt::Side::Left);                   // add 5 pixels margin
@@ -34,12 +34,10 @@ HelloApplication::HelloApplication(const Wt::WEnvironment& env)
   /*
    * - using a lambda:
    */
-  greetBut->clicked().connect([=]() { 
-          std::cerr << "Hello there, " << nameEdit_->text() << + ". How are you?"
-                    << std::endl;
-          auto goodBut = root()->addWidget(Wt::cpp14::make_unique<Wt::WPushButton>("Good"));
-      goodBut->setMargin(5, Wt::Side::Left);
-      });
+  greetBut->clicked().connect([&]() {
+          nameEdit_ = root()->addWidget(Wt::cpp14::make_unique<Wt::WLineEdit>());
+          // total = std::stoi(nameEdit_->text()) + oldTotal;
+         std::cerr << "Your total Number is: " << total; });
 }
 
 void HelloApplication::greet()
@@ -47,5 +45,5 @@ void HelloApplication::greet()
   /*
    * Update the text, using text input into the nameEdit_ field.
    */
-  greeting_->setText("Hello there, " + nameEdit_->text());
+  greeting_->setText("Your total is: " + nameEdit_->text());
 }

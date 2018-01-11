@@ -40,6 +40,87 @@ End-of-file | Ctrl-D
 
 
 
+** C++ Keywords
+alignas **
+alignof **
+and
+and_eq
+asm
+auto
+bitand
+bitor
+bool *
+break
+case
+catch	char
+char16_t **
+char32_t **
+class
+compl
+const
+constexpr **
+const_cast *
+continue
+decltype
+default
+delete	do
+double
+dynamic_cast *
+else
+enum
+explicit *
+export *
+extern
+false *
+float
+for
+friend	goto
+if
+inline
+int
+long
+mutable *
+namespace *
+new
+noexcept **
+not
+not_eq
+nullptr **	operator
+or
+or_eq
+private
+protected
+public
+register
+reinterpret_cast *
+return
+short
+signed
+sizeof	static
+static_assert **
+static_cast *
+struct
+switch
+template
+this
+thread_local **
+throw
+true *
+try
+typedef	typeid *
+typename *
+union
+unsigned
+using *
+virtual
+void
+volatile
+wchar_t *
+while
+xor
+xor_eq
+
+
 ** Emails From MC
 
 --------------------------------------------------------------------------------
@@ -101,16 +182,21 @@ if all goes well you should see the hello world.
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-09 Tue 14:21]
-| <75>                                                                        |        |      |   |       |
-| Headline                                                                    | Time   |      |   |     % |
-|-----------------------------------------------------------------------------+--------+------+---+-------|
-| *Total time*                                                                | *3:49* |      |   | 100.0 |
-|-----------------------------------------------------------------------------+--------+------+---+-------|
-| Tasks                                                                       | 3:49   |      |   | 100.0 |
-| Setup CMake                                                                 |        | 0:46 |   |  20.1 |
-| Reviewing yesterdays Grades task                                            |        | 2:13 |   |  58.1 |
-| Copy across hello world from wt (And how to run wt)                         |        | 0:50 |   |  21.8 |
+#+CAPTION: Clock summary at [2018-01-11 Thu 13:59]
+| <75>                                                                        |         |      |   |       |
+| Headline                                                                    | Time    |      |   |     % |
+|-----------------------------------------------------------------------------+---------+------+---+-------|
+| *Total time*                                                                | *10:04* |      |   | 100.0 |
+|-----------------------------------------------------------------------------+---------+------+---+-------|
+| Tasks                                                                       | 10:04   |      |   | 100.0 |
+| Setup CMake                                                                 |         | 0:46 |   |   7.6 |
+| Reviewing yesterdays Grades task                                            |         | 2:13 |   |  22.0 |
+| Copy across hello world from wt (And how to run wt)                         |         | 0:50 |   |   8.3 |
+| Adding numbers on wt                                                        |         | 0:44 |   |   7.3 |
+| Watch tutorials on youtube                                                  |         | 2:03 |   |  20.4 |
+| Attempt to use wt solo                                                      |         | 1:24 |   |  13.9 |
+| Practice C++                                                                |         | 0:42 |   |   7.0 |
+| Reading "Learn C++" chapter 1                                               |         | 1:22 |   |  13.6 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end:
 
@@ -135,3 +221,34 @@ values on output operations.
 
 - To run:
 ./hellowt --docroot . --http-listen 0.0.0.0:8080
+-Compile Adress template:
+cd ~/Development/HelloWorld/hellowt/build && CMAKE_INCLUDE_PATH=/home/patrick/local/include CMAKE_LIBRARY_PATH=/home/patrick/local/lib cmake .. && make -j4
+** Adding numbers on wt
+   CLOCK: [2018-01-09 Tue 15:02]--[2018-01-09 Tue 15:46] =>  0:44
+** Watch tutorials on youtube
+   CLOCK: [2018-01-10 Wed 14:14]--[2018-01-10 Wed 15:29] =>  1:15
+   CLOCK: [2018-01-10 Wed 13:04]--[2018-01-10 Wed 13:52] =>  0:48
+
+- watch youtube videos sent by MC and N
+
+** Attempt to use wt solo
+   CLOCK: [2018-01-10 Wed 15:37]--[2018-01-10 Wed 17:01] =>  2:24
+
+- Trying to recreate something on a web page using wt
+
+** Practice C++
+   CLOCK: [2018-01-11 Thu 09:32]--[2018-01-11 Thu 10:14] =>  0:42
+
+-Trying to create something in C++ without looking at ref
+-Try to incorporate all that I've learned
+
+** Reading "Learn C++" chapter 1
+   CLOCK: [2018-01-11 Thu 13:09]--[2018-01-11 Thu 13:37] =>  0:28
+   CLOCK: [2018-01-11 Thu 10:58]--[2018-01-11 Thu 11:52] =>  0:54
+
+
+-Completed Chapter 1
+-Left the questions until the end. Did them after lunch
+-Pretty confident reading the information
+** Cleaning up tasks.org
+   CLOCK: [2018-01-11 Thu 13:44]--[2018-01-11 Thu 14:00] =>  0:16
