@@ -247,8 +247,7 @@ cd ~/Development/HelloWorld/hellowt/build && CMAKE_INCLUDE_PATH=/home/patrick/lo
    CLOCK: [2018-01-11 Thu 10:58]--[2018-01-11 Thu 11:52] =>  0:54
 
 
--Completed Chapter 1
--Left the questions until the end. Did them after lunch
--Pretty confident reading the information
+-Complete Chapter 1
+-Leaving the questions until the end
 ** Cleaning up tasks.org
    CLOCK: [2018-01-11 Thu 13:44]--[2018-01-11 Thu 14:00] =>  0:16
