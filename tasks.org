@@ -182,21 +182,22 @@ if all goes well you should see the hello world.
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-11 Thu 13:59]
+#+CAPTION: Clock summary at [2018-01-11 Thu 17:01]
 | <75>                                                                        |         |      |   |       |
 | Headline                                                                    | Time    |      |   |     % |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| *Total time*                                                                | *10:04* |      |   | 100.0 |
+| *Total time*                                                                | *11:44* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| Tasks                                                                       | 10:04   |      |   | 100.0 |
-| Setup CMake                                                                 |         | 0:46 |   |   7.6 |
-| Reviewing yesterdays Grades task                                            |         | 2:13 |   |  22.0 |
-| Copy across hello world from wt (And how to run wt)                         |         | 0:50 |   |   8.3 |
-| Adding numbers on wt                                                        |         | 0:44 |   |   7.3 |
-| Watch tutorials on youtube                                                  |         | 2:03 |   |  20.4 |
-| Attempt to use wt solo                                                      |         | 1:24 |   |  13.9 |
-| Practice C++                                                                |         | 0:42 |   |   7.0 |
-| Reading "Learn C++" chapter 1                                               |         | 1:22 |   |  13.6 |
+| Tasks                                                                       | 11:44   |      |   | 100.0 |
+| Setup CMake                                                                 |         | 0:46 |   |   6.5 |
+| Reviewing yesterdays Grades task                                            |         | 2:13 |   |  18.9 |
+| Copy across hello world from wt (And how to run wt)                         |         | 0:50 |   |   7.1 |
+| Adding numbers on wt                                                        |         | 0:44 |   |   6.2 |
+| Watch tutorials on youtube                                                  |         | 2:03 |   |  17.5 |
+| Attempt to use wt solo                                                      |         | 1:24 |   |  11.9 |
+| Practice C++                                                                |         | 1:28 |   |  12.5 |
+| Reading "Learn C++" chapter 1                                               |         | 2:00 |   |  17.0 |
+| Cleaning up tasks.org                                                       |         | 0:16 |   |   2.3 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end:
 
@@ -237,17 +238,21 @@ cd ~/Development/HelloWorld/hellowt/build && CMAKE_INCLUDE_PATH=/home/patrick/lo
 - Trying to recreate something on a web page using wt
 
 ** Practice C++
+   CLOCK: [2018-01-11 Thu 14:31]--[2018-01-11 Thu 15:17] =>  0:46
    CLOCK: [2018-01-11 Thu 09:32]--[2018-01-11 Thu 10:14] =>  0:42
+
 
 -Trying to create something in C++ without looking at ref
 -Try to incorporate all that I've learned
 
 ** Reading "Learn C++" chapter 1
+   CLOCK: [2018-01-11 Thu 16:24]--[2018-01-11 Thu 17:02] =>  0:38
    CLOCK: [2018-01-11 Thu 13:09]--[2018-01-11 Thu 13:37] =>  0:28
    CLOCK: [2018-01-11 Thu 10:58]--[2018-01-11 Thu 11:52] =>  0:54
 
 
 -Complete Chapter 1
 -Leaving the questions until the end
+-Upto: 1.11
 ** Cleaning up tasks.org
    CLOCK: [2018-01-11 Thu 13:44]--[2018-01-11 Thu 14:00] =>  0:16
