@@ -19,9 +19,13 @@ int main(){
     int cpuCard1;
     int cpuCard2;
     int cpuCard3;
+    int pTotalC;
+    int cTotalC;
     string gameState = "playing";
+    bool repeat = true;
 
     srand (time(NULL));
+    while (repeat == true){
     while(gameState == "playing"){
         playerCard1 = rand() % 11 + 1;
         playerCard2 = rand() % 11 + 1;
@@ -48,7 +52,8 @@ int main(){
                 " | " << playerCard3 << " | "  << endl;
                 pCards += 1;
             }
-            //cout << "CPU -- | " << "**" << " | " << "**" << " |" << endl;
+            //cout << "CPU -- | " << "**" << " | " << "**" << " |" <<
+            //endl;
         }
         if (playerCard1 + playerCard2 + playerCard3 > 21)
         {
@@ -63,7 +68,7 @@ int main(){
             cCards += 1;
         }else
         {
-            cout << "CPU -- | " << "**" << " | " << "**" << " |" << endl;
+            cout << "CPU -- | " << "**" << " | " << " **" << " |" << endl;
         }
         cin >> text;
         if (text == "hit" && pCards == 3)
@@ -80,12 +85,10 @@ int main(){
         cout << endl;
         if (cpuReveal == true)
         {
-            int pTotalC;
-            int cTotalC;
             if (pCards == 2)
             {
                 cout << "YOU -- | " << playerCard1 << " | " << playerCard2 <<
-                    " |" << " ===> " << playerCard1 + playerCard2 <<endl;
+                    " | " << " ===> " << playerCard1 + playerCard2 <<endl;
                 pTotalC = playerCard1 + playerCard2;
             }
             if (cCards == 2)
@@ -97,18 +100,24 @@ int main(){
             if (pCards == 3)
             {
                 cout << "YOU -- | " << playerCard1 << " | " << playerCard2 <<
-                    " |"  << playerCard3 <<" |" << " ===> " << playerCard1 +
+                    " | "  << playerCard3 <<" |" << " ===> " << playerCard1 +
                     playerCard2 + playerCard3 <<endl;
             }
             if (cCards == 3)
             {
                 cout << "CPU -- | " << cpuCard1 << " | " << cpuCard2 << " | " <<
-                    cpuCard3 <<  " ===> " << cpuCard1 + cpuCard2 + cpuCard3 <<
+                    cpuCard3 << " | " <<  " ===> " << cpuCard1 + cpuCard2 + cpuCard3 <<
                     endl;
             }
 
             if (pTotalC > cTotalC){
                 gameState = "gameOverWin";
+                cout << "You Win" << endl;
+                cout << "Would you like to play again?" << endl;
+                cin >> text;
+                pTotalC = 2;
+                cTotalC = 2;
+                cpuReveal = false;
             }
             if (pTotalC < cTotalC){
                 gameState = "gameOverLose";
@@ -116,20 +125,21 @@ int main(){
         }
     }
 
-    if (gameState == "gameOverLose"){
+    if (gameState == "gameOverLose" )
+    {
         cout << "You Lose" << endl;
         cout << "Would you like to play again?" << endl;
         cin >> text;
-        if (text == "yes" || text == "y"){
-            gameState = "playing";
-        }
+        pTotalC = 2;
+        cTotalC = 2;
     }
-    if (gameState == "gameOverWin"){
-        cout << "You Win" << endl;
-        cout << "Would you like to play again?" << endl;
-        cin >> text;
-        if (text == "yes" || text == "y"){
-            gameState = "playing";
-        }
+    if (text == "yes" || text == "y")
+    {
+        cpuReveal = false;
+        gameState = "playing";
+    }
+    if (text == "no" || text == "n"){
+        return 0;
+    }
     }
 }
