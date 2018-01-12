@@ -22,7 +22,7 @@ int main(){
     string gameState = "playing";
 
     srand (time(NULL));
-    if(gameState == "playing"){
+    while(gameState == "playing"){
         playerCard1 = rand() % 11 + 1;
         playerCard2 = rand() % 11 + 1;
         playerCard3 = rand() % 11 + 1;
@@ -32,58 +32,104 @@ int main(){
         cpuCard3 = rand() % 11 + 1;
         cout << "YOU -- | " << playerCard1 << " | " << playerCard2 << " |" <<
             endl;
-        if (cpuReveal == false){
+        if (cpuReveal == false)
+        {
             cout << "CPU -- | " << "**" << " | " << "**" << " |" << endl;
         }
         cout << "Hit or Stay?" << endl;
         cin >> text;
         cout << endl;
         cout << endl;
-        if (text == "hit"){
-            if (pCards == 2){
+        if (text == "hit")
+        {
+            if (pCards == 2)
+            {
                 cout << "YOU -- | " << playerCard1 << " | " << playerCard2 <<
                 " | " << playerCard3 << " | "  << endl;
                 pCards += 1;
             }
             //cout << "CPU -- | " << "**" << " | " << "**" << " |" << endl;
         }
-        if (cpuCard1 + cpuCard2 <= 16){
+        if (playerCard1 + playerCard2 + playerCard3 > 21)
+        {
+            cout << "BUST!\n" << endl;
+            gameState = "gameOverLose";
+            break;
+        }
+        if (cpuCard1 + cpuCard2 <= 16)
+        {
             cout << "CPU -- | " << "**" << " | " << "**" << " |" << "**" <<
                 " |" << endl;
             cCards += 1;
-        }else{
+        }else
+        {
             cout << "CPU -- | " << "**" << " | " << "**" << " |" << endl;
         }
         cin >> text;
-        if (text == "hit" && pCards == 3){
+        if (text == "hit" && pCards == 3)
+        {
             cout << "YOU -- | " << playerCard1 << " | " << playerCard2 <<
                 " | " << playerCard3 << " | "  << playerCard4 <<
                 " | "   << endl;
         }
-        if (text == "stay"){
+        if (text == "stay")
+        {
             cpuReveal = true;
         }
         cout << endl;
         cout << endl;
-        if (cpuReveal == true){
-            if (pCards == 2){
+        if (cpuReveal == true)
+        {
+            int pTotalC;
+            int cTotalC;
+            if (pCards == 2)
+            {
                 cout << "YOU -- | " << playerCard1 << " | " << playerCard2 <<
                     " |" << " ===> " << playerCard1 + playerCard2 <<endl;
+                pTotalC = playerCard1 + playerCard2;
             }
-            if (cCards == 2){
-            cout << "CPU -- | " << cpuCard1 << " | " << cpuCard2 << " |" <<
+            if (cCards == 2)
+            {
+                cout << "CPU -- | " << cpuCard1 << " | " << cpuCard2 << " | " <<
                 " ===> " << cpuCard1 + cpuCard2 << endl;
+                cTotalC = cpuCard1 + cpuCard2;
             }
-            if (pCards == 3){
+            if (pCards == 3)
+            {
                 cout << "YOU -- | " << playerCard1 << " | " << playerCard2 <<
                     " |"  << playerCard3 <<" |" << " ===> " << playerCard1 +
                     playerCard2 + playerCard3 <<endl;
             }
-            if (cCards == 3){
-                cout << "CPU -- | " << cpuCard1 << " | " << cpuCard2 << " |" <<
+            if (cCards == 3)
+            {
+                cout << "CPU -- | " << cpuCard1 << " | " << cpuCard2 << " | " <<
                     cpuCard3 <<  " ===> " << cpuCard1 + cpuCard2 + cpuCard3 <<
                     endl;
             }
+
+            if (pTotalC > cTotalC){
+                gameState = "gameOverWin";
+            }
+            if (pTotalC < cTotalC){
+                gameState = "gameOverLose";
+            }
+        }
+    }
+
+    if (gameState == "gameOverLose"){
+        cout << "You Lose" << endl;
+        cout << "Would you like to play again?" << endl;
+        cin >> text;
+        if (text == "yes" || text == "y"){
+            gameState = "playing";
+        }
+    }
+    if (gameState == "gameOverWin"){
+        cout << "You Win" << endl;
+        cout << "Would you like to play again?" << endl;
+        cin >> text;
+        if (text == "yes" || text == "y"){
+            gameState = "playing";
         }
     }
 }
