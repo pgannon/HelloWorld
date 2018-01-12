@@ -182,22 +182,23 @@ if all goes well you should see the hello world.
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-11 Thu 17:01]
+#+CAPTION: Clock summary at [2018-01-12 Fri 12:40]
 | <75>                                                                        |         |      |   |       |
 | Headline                                                                    | Time    |      |   |     % |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| *Total time*                                                                | *11:44* |      |   | 100.0 |
+| *Total time*                                                                | *13:16* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| Tasks                                                                       | 11:44   |      |   | 100.0 |
-| Setup CMake                                                                 |         | 0:46 |   |   6.5 |
-| Reviewing yesterdays Grades task                                            |         | 2:13 |   |  18.9 |
-| Copy across hello world from wt (And how to run wt)                         |         | 0:50 |   |   7.1 |
-| Adding numbers on wt                                                        |         | 0:44 |   |   6.2 |
-| Watch tutorials on youtube                                                  |         | 2:03 |   |  17.5 |
-| Attempt to use wt solo                                                      |         | 1:24 |   |  11.9 |
-| Practice C++                                                                |         | 1:28 |   |  12.5 |
-| Reading "Learn C++" chapter 1                                               |         | 2:00 |   |  17.0 |
-| Cleaning up tasks.org                                                       |         | 0:16 |   |   2.3 |
+| Tasks                                                                       | 13:16   |      |   | 100.0 |
+| Setup CMake                                                                 |         | 0:46 |   |   5.8 |
+| Reviewing yesterdays Grades task                                            |         | 2:13 |   |  16.7 |
+| Copy across hello world from wt (And how to run wt)                         |         | 0:50 |   |   6.3 |
+| Adding numbers on wt                                                        |         | 0:44 |   |   5.5 |
+| Watch tutorials on youtube                                                  |         | 2:03 |   |  15.5 |
+| Attempt to use wt solo                                                      |         | 1:24 |   |  10.6 |
+| Practice C++                                                                |         | 1:28 |   |  11.1 |
+| Reading "Learn C++" chapter 1                                               |         | 2:00 |   |  15.1 |
+| Cleaning up tasks.org                                                       |         | 0:16 |   |   2.0 |
+| Making 21 game                                                              |         | 1:32 |   |  11.6 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end:
 
@@ -256,3 +257,15 @@ cd ~/Development/HelloWorld/hellowt/build && CMAKE_INCLUDE_PATH=/home/patrick/lo
 -Upto: 1.11
 ** Cleaning up tasks.org
    CLOCK: [2018-01-11 Thu 13:44]--[2018-01-11 Thu 14:00] =>  0:16
+** Making 21 game
+   CLOCK: [2018-01-12 Fri 11:06]--[2018-01-12 Fri 12:14] =>  1:08
+   CLOCK: [2018-01-12 Fri 10:20]--[2018-01-12 Fri 10:44] =>  0:24
+
+- randomly generate number for player and cpu
+- hide cpu cards
+- ask player if they'd like to hit
+- ask cpu if they'd like to hit
+- when player holds ask cpu
+- when both hold, reveal cpu cards
+- annouce winner
+- ask if they would like to play again
