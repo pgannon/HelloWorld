@@ -10,30 +10,80 @@ int main(){
 
     string text = "";
     bool cpuReveal = false;
-    int playerCard1;
+    int pCards = 2;
+    int cCards = 2;
+    int playerCard4;
+    int playerCard3;
     int playerCard2;
+    int playerCard1;
     int cpuCard1;
     int cpuCard2;
-    string gameState = "";
+    int cpuCard3;
+    string gameState = "playing";
 
     srand (time(NULL));
-    cin >> text;
-    (gameState == "deal"){
+    if(gameState == "playing"){
         playerCard1 = rand() % 11 + 1;
         playerCard2 = rand() % 11 + 1;
+        playerCard3 = rand() % 11 + 1;
+        playerCard4 = rand() % 11 + 1;
         cpuCard1 = rand() % 11 + 1;
         cpuCard2 = rand() % 11 + 1;
-        cout << "Player -- | " << playerCard1 << " | " << playerCard2 << " |" <<
+        cpuCard3 = rand() % 11 + 1;
+        cout << "YOU -- | " << playerCard1 << " | " << playerCard2 << " |" <<
             endl;
-    }
-
-    if (cpuReveal == false){
-        cout << "Computer -- | " << "**" << " | " << "**" << " |" << endl;
-    } else {
-        cout << "Computer -- | " << cpuCard1 << " | " << cpuCard2 << " |" << endl;
-    }
-
-    if (text == "stay"){
-        cpuReveal = true;
+        if (cpuReveal == false){
+            cout << "CPU -- | " << "**" << " | " << "**" << " |" << endl;
+        }
+        cout << "Hit or Stay?" << endl;
+        cin >> text;
+        cout << endl;
+        cout << endl;
+        if (text == "hit"){
+            if (pCards == 2){
+                cout << "YOU -- | " << playerCard1 << " | " << playerCard2 <<
+                " | " << playerCard3 << " | "  << endl;
+                pCards += 1;
+            }
+            //cout << "CPU -- | " << "**" << " | " << "**" << " |" << endl;
+        }
+        if (cpuCard1 + cpuCard2 <= 16){
+            cout << "CPU -- | " << "**" << " | " << "**" << " |" << "**" <<
+                " |" << endl;
+            cCards += 1;
+        }else{
+            cout << "CPU -- | " << "**" << " | " << "**" << " |" << endl;
+        }
+        cin >> text;
+        if (text == "hit" && pCards == 3){
+            cout << "YOU -- | " << playerCard1 << " | " << playerCard2 <<
+                " | " << playerCard3 << " | "  << playerCard4 <<
+                " | "   << endl;
+        }
+        if (text == "stay"){
+            cpuReveal = true;
+        }
+        cout << endl;
+        cout << endl;
+        if (cpuReveal == true){
+            if (pCards == 2){
+                cout << "YOU -- | " << playerCard1 << " | " << playerCard2 <<
+                    " |" << " ===> " << playerCard1 + playerCard2 <<endl;
+            }
+            if (cCards == 2){
+            cout << "CPU -- | " << cpuCard1 << " | " << cpuCard2 << " |" <<
+                " ===> " << cpuCard1 + cpuCard2 << endl;
+            }
+            if (pCards == 3){
+                cout << "YOU -- | " << playerCard1 << " | " << playerCard2 <<
+                    " |"  << playerCard3 <<" |" << " ===> " << playerCard1 +
+                    playerCard2 + playerCard3 <<endl;
+            }
+            if (cCards == 3){
+                cout << "CPU -- | " << cpuCard1 << " | " << cpuCard2 << " |" <<
+                    cpuCard3 <<  " ===> " << cpuCard1 + cpuCard2 + cpuCard3 <<
+                    endl;
+            }
+        }
     }
 }
