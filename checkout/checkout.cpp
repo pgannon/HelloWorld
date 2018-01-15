@@ -46,7 +46,7 @@ int main(){
             cout << "Cookies -- £" << price << endl << endl;
             continue;
         }
-        if (food == "Juice"){
+        if (food == "juice"){
             price = 0.99;
             cout << "Juice -- £" << price << endl << endl;
             continue;
@@ -83,7 +83,7 @@ int main(){
             if(food == "eggs"){
                 price = 1.60;
                 cout << "Eggs -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 1.60;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -91,7 +91,7 @@ int main(){
             if(food == "butter"){
                 price = 2.00;
                 cout << "Butter -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 2.00;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -99,7 +99,7 @@ int main(){
             if(food == "cookies"){
                 price = 1.25;
                 cout << "Cookies -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 1.25;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -133,7 +133,7 @@ int main(){
             if(food == "eggs"){
                 price = 1.60;
                 cout << "Eggs -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 1.60;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -141,7 +141,7 @@ int main(){
             if(food == "butter"){
                 price = 2.00;
                 cout << "Butter -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 2.00;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -149,7 +149,7 @@ int main(){
             if(food == "cookies"){
                 price = 1.25;
                 cout << "Cookies -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 1.25;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -183,7 +183,7 @@ int main(){
             if(food == "eggs"){
                 price = 1.60;
                 cout << "Eggs -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 1.60;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -191,7 +191,7 @@ int main(){
             if(food == "butter"){
                 price = 2.00;
                 cout << "Butter -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 2.00;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -199,7 +199,7 @@ int main(){
             if(food == "cookies"){
                 price = 1.25;
                 cout << "Cookies -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 1.25;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -233,7 +233,7 @@ int main(){
             if(food == "eggs"){
                 price = 1.60;
                 cout << "Eggs -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 1.60;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -241,7 +241,7 @@ int main(){
             if(food == "butter"){
                 price = 2.00;
                 cout << "Butter -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 2.00;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -249,7 +249,7 @@ int main(){
             if(food == "cookies"){
                 price = 1.25;
                 cout << "Cookies -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 1.25;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -283,7 +283,7 @@ int main(){
             if(food == "eggs"){
                 price = 1.60;
                 cout << "Eggs -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 1.60;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -291,7 +291,7 @@ int main(){
             if(food == "butter"){
                 price = 2.00;
                 cout << "Butter -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 2.00;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -299,7 +299,7 @@ int main(){
             if(food == "cookies"){
                 price = 1.25;
                 cout << "Cookies -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 1.25;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -333,7 +333,7 @@ int main(){
             if(food == "eggs"){
                 price = 1.60;
                 cout << "Eggs -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 1.60;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -341,7 +341,7 @@ int main(){
             if(food == "butter"){
                 price = 2.00;
                 cout << "Butter -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 2.00;
                 cin >> food;
                 cout << endl;
                 item += 1;
@@ -349,7 +349,7 @@ int main(){
             if(food == "cookies"){
                 price = 1.25;
                 cout << "Cookies -- £" << price << endl;
-                totalPrice += 0.99;
+                totalPrice += 1.25;
                 cin >> food;
                 cout << endl;
                 item += 1;
