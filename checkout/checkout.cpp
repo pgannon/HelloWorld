@@ -12,22 +12,54 @@ int main(){
     double price;
     int item = 1;
     double totalPrice;
-    string state = "createList";
+    string state = "priceCheck";
     while (state == "priceCheck"){
-        cout << "Input food to get a price:" << endl;
+        cout << "Food Available:" << endl << "| Bread | Milk | Eggs | Butter |"
+             << " Cookies | Juice |" << endl << endl;
+        cout << "Type in the name of the item to price check" << endl;
+        cout << "After type \"list\" to create your shopping list"
+             << endl << endl;
         cin >> food;
         cout << endl;
         if (food == "bread"){
             price = 1.50;
             cout << "Bread -- £" << price << endl << endl;
+            continue;
         }
         if (food == "milk"){
             price = 0.99;
             cout << "Milk -- £" << price << endl << endl;
+            continue;
+        }
+        if (food == "eggs"){
+            price = 1.60;
+            cout << "Eggs -- £" << price << endl << endl;
+            continue;
+        }
+        if (food == "butter"){
+            price = 2.00;
+            cout << "Butter -- £" << price << endl << endl;
+            continue;
+        }
+        if (food == "cookies"){
+            price = 1.25;
+            cout << "Cookies -- £" << price << endl << endl;
+            continue;
+        }
+        if (food == "Juice"){
+            price = 0.99;
+            cout << "Juice -- £" << price << endl << endl;
+            continue;
+        }
+
+        if (food == "list" ){
+
+            state = "createList";
         }
     }
     while (state == "createList"){
-        cout << "Input food to add it to the list:" << endl;
+        cout << "Type items to add them to your shopping list" << endl;
+        cout << "After \"end\" to finish and get your total" << endl;
         cin >> food;
         cout << endl;
 

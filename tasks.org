@@ -182,27 +182,27 @@ if all goes well you should see the hello world.
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-15 Mon 14:19]
+#+CAPTION: Clock summary at [2018-01-15 Mon 16:48]
 | <75>                                                                        |         |      |   |       |
 | Headline                                                                    | Time    |      |   |     % |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| *Total time*                                                                | *19:28* |      |   | 100.0 |
+| *Total time*                                                                | *20:47* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| Tasks                                                                       | 19:28   |      |   | 100.0 |
-| Setup CMake                                                                 |         | 0:46 |   |   3.9 |
-| Reviewing yesterdays Grades task                                            |         | 2:13 |   |  11.4 |
-| Copy across hello world from wt (And how to run wt)                         |         | 0:50 |   |   4.3 |
-| Adding numbers on wt                                                        |         | 0:44 |   |   3.8 |
-| Watch tutorials on youtube                                                  |         | 2:03 |   |  10.5 |
-| Attempt to use wt solo                                                      |         | 1:24 |   |   7.2 |
-| Practice C++                                                                |         | 1:28 |   |   7.5 |
-| Reading "Learn C++" chapter 1                                               |         | 2:00 |   |  10.3 |
-| Cleaning up tasks.org                                                       |         | 0:16 |   |   1.4 |
-| Making 21 game                                                              |         | 4:38 |   |  23.8 |
-| Comparing NI and mines 21 games                                             |         | 0:37 |   |   3.2 |
-| Discussing a task with NI                                                   |         | 0:28 |   |   2.4 |
-| Creating a simple shopping checkout                                         |         | 1:29 |   |   7.6 |
-| Studying different loops etc etc                                            |         | 0:32 |   |   2.7 |
+| Tasks                                                                       | 20:47   |      |   | 100.0 |
+| Setup CMake                                                                 |         | 0:46 |   |   3.7 |
+| Reviewing yesterdays Grades task                                            |         | 2:13 |   |  10.7 |
+| Copy across hello world from wt (And how to run wt)                         |         | 0:50 |   |   4.0 |
+| Adding numbers on wt                                                        |         | 0:44 |   |   3.5 |
+| Watch tutorials on youtube                                                  |         | 2:03 |   |   9.9 |
+| Attempt to use wt solo                                                      |         | 1:24 |   |   6.7 |
+| Practice C++                                                                |         | 1:28 |   |   7.1 |
+| Reading "Learn C++" chapter 1                                               |         | 2:00 |   |   9.6 |
+| Cleaning up tasks.org                                                       |         | 0:16 |   |   1.3 |
+| Making 21 game                                                              |         | 4:38 |   |  22.3 |
+| Comparing NI and mines 21 games                                             |         | 0:37 |   |   3.0 |
+| Discussing a task with NI                                                   |         | 0:28 |   |   2.2 |
+| Creating a simple shopping checkout                                         |         | 2:48 |   |  13.5 |
+| Studying different loops etc etc                                            |         | 0:32 |   |   2.6 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end:
 
@@ -289,6 +289,7 @@ cd ~/Development/HelloWorld/hellowt/build && CMAKE_INCLUDE_PATH=/home/patrick/lo
    CLOCK: [2018-01-15 Mon 11:36]--[2018-01-15 Mon 12:04] =>  0:28
 
 ** Creating a simple shopping checkout
+   CLOCK: [2018-01-15 Mon 15:07]--[2018-01-15 Mon 16:26] =>  1:19
    CLOCK: [2018-01-15 Mon 12:10]--[2018-01-15 Mon 13:39] =>  1:29
 
 
@@ -299,6 +300,7 @@ cd ~/Development/HelloWorld/hellowt/build && CMAKE_INCLUDE_PATH=/home/patrick/lo
 - ask the user for input of what they want
 - make it possible so order of input of items doesn't matter
 - show total
+- wrong total, unsure why
 ** Studying different loops etc etc
    CLOCK: [2018-01-15 Mon 13:47]--[2018-01-15 Mon 14:19] =>  0:32
 
