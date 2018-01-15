@@ -182,24 +182,26 @@ if all goes well you should see the hello world.
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-12 Fri 17:39]
+#+CAPTION: Clock summary at [2018-01-15 Mon 13:47]
 | <75>                                                                        |         |      |   |       |
 | Headline                                                                    | Time    |      |   |     % |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| *Total time*                                                                | *16:59* |      |   | 100.0 |
+| *Total time*                                                                | *18:56* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| Tasks                                                                       | 16:59   |      |   | 100.0 |
-| Setup CMake                                                                 |         | 0:46 |   |   4.5 |
-| Reviewing yesterdays Grades task                                            |         | 2:13 |   |  13.1 |
-| Copy across hello world from wt (And how to run wt)                         |         | 0:50 |   |   4.9 |
-| Adding numbers on wt                                                        |         | 0:44 |   |   4.3 |
-| Watch tutorials on youtube                                                  |         | 2:03 |   |  12.1 |
-| Attempt to use wt solo                                                      |         | 1:24 |   |   8.2 |
-| Practice C++                                                                |         | 1:28 |   |   8.6 |
-| Reading "Learn C++" chapter 1                                               |         | 2:00 |   |  11.8 |
-| Cleaning up tasks.org                                                       |         | 0:16 |   |   1.6 |
-| Making 21 game                                                              |         | 4:38 |   |  27.3 |
-| Comparing NI and mines 21 games                                             |         | 0:37 |   |   3.6 |
+| Tasks                                                                       | 18:56   |      |   | 100.0 |
+| Setup CMake                                                                 |         | 0:46 |   |   4.0 |
+| Reviewing yesterdays Grades task                                            |         | 2:13 |   |  11.7 |
+| Copy across hello world from wt (And how to run wt)                         |         | 0:50 |   |   4.4 |
+| Adding numbers on wt                                                        |         | 0:44 |   |   3.9 |
+| Watch tutorials on youtube                                                  |         | 2:03 |   |  10.8 |
+| Attempt to use wt solo                                                      |         | 1:24 |   |   7.4 |
+| Practice C++                                                                |         | 1:28 |   |   7.7 |
+| Reading "Learn C++" chapter 1                                               |         | 2:00 |   |  10.6 |
+| Cleaning up tasks.org                                                       |         | 0:16 |   |   1.4 |
+| Making 21 game                                                              |         | 4:38 |   |  24.5 |
+| Comparing NI and mines 21 games                                             |         | 0:37 |   |   3.3 |
+| Discussing a task with NI                                                   |         | 0:28 |   |   2.5 |
+| Creating a simple shopping checkout                                         |         | 1:29 |   |   7.8 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end:
 
@@ -273,6 +275,7 @@ cd ~/Development/HelloWorld/hellowt/build && CMAKE_INCLUDE_PATH=/home/patrick/lo
 - when both hold, reveal cpu cards
 - annouce winner
 - ask if they would like to play again
+
 ** Comparing NI and mines 21 games
    CLOCK: [2018-01-12 Fri 16:12]--[2018-01-12 Fri 16:30] =>  0:18
    CLOCK: [2018-01-12 Fri 14:50]--[2018-01-12 Fri 15:09] =>  0:19
@@ -281,3 +284,17 @@ cd ~/Development/HelloWorld/hellowt/build && CMAKE_INCLUDE_PATH=/home/patrick/lo
         whatever
      } while ( !condition );
 - break;
+** Discussing a task with NI
+   CLOCK: [2018-01-15 Mon 11:36]--[2018-01-15 Mon 12:04] =>  0:28
+
+** Creating a simple shopping checkout
+   CLOCK: [2018-01-15 Mon 12:10]--[2018-01-15 Mon 13:39] =>  1:29
+
+
+- create a list of items
+- give each item a price
+- allow user to price check without adding to list
+- make option to start list
+- ask the user for input of what they want
+- make it possible so order of input of items doesn't matter
+- show total
