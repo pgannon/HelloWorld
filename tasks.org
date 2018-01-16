@@ -182,29 +182,29 @@ if all goes well you should see the hello world.
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-16 Tue 16:04]
+#+CAPTION: Clock summary at [2018-01-16 Tue 16:27]
 | <75>                                                                        |         |      |   |       |
 | Headline                                                                    | Time    |      |   |     % |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| *Total time*                                                                | *26:13* |      |   | 100.0 |
+| *Total time*                                                                | *26:34* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| Tasks                                                                       | 26:13   |      |   | 100.0 |
+| Tasks                                                                       | 26:34   |      |   | 100.0 |
 | Setup CMake                                                                 |         | 0:46 |   |   2.9 |
-| Reviewing yesterdays Grades task                                            |         | 2:13 |   |   8.5 |
-| Copy across hello world from wt (And how to run wt)                         |         | 0:50 |   |   3.2 |
+| Reviewing yesterdays Grades task                                            |         | 2:13 |   |   8.3 |
+| Copy across hello world from wt (And how to run wt)                         |         | 0:50 |   |   3.1 |
 | Adding numbers on wt                                                        |         | 0:44 |   |   2.8 |
-| Watch tutorials on youtube                                                  |         | 2:03 |   |   7.8 |
+| Watch tutorials on youtube                                                  |         | 2:03 |   |   7.7 |
 | Attempt to use wt solo                                                      |         | 1:24 |   |   5.3 |
-| Practice C++                                                                |         | 1:28 |   |   5.6 |
-| Reading "Learn C++" chapter 1                                               |         | 2:33 |   |   9.7 |
+| Practice C++                                                                |         | 1:28 |   |   5.5 |
+| Reading "Learn C++" chapter 1                                               |         | 2:33 |   |   9.6 |
 | Cleaning up tasks.org                                                       |         | 0:38 |   |   2.4 |
-| Making 21 game                                                              |         | 4:38 |   |  17.7 |
-| Comparing NI and mines 21 games                                             |         | 0:37 |   |   2.4 |
+| Making 21 game                                                              |         | 4:38 |   |  17.4 |
+| Comparing NI and mines 21 games                                             |         | 0:37 |   |   2.3 |
 | Discussing a task with NI                                                   |         | 0:38 |   |   2.4 |
-| Creating a simple shopping checkout                                         |         | 2:57 |   |  11.3 |
+| Creating a simple shopping checkout                                         |         | 2:57 |   |  11.1 |
 | Studying different loops etc etc                                            |         | 0:32 |   |   2.0 |
-| Writing a text base adventure                                               |         | 3:45 |   |  14.3 |
-| Comparing NI and mines Text Adv                                             |         | 0:27 |   |   1.7 |
+| Writing a text base adventure                                               |         | 3:45 |   |  14.1 |
+| Comparing NI and mines Text Adv                                             |         | 0:48 |   |   3.0 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end:
 
@@ -329,7 +329,9 @@ cd ~/Development/HelloWorld/hellowt/build && CMAKE_INCLUDE_PATH=/home/patrick/lo
    CLOCK: [2018-01-16 Tue 11:23]--[2018-01-16 Tue 11:56] =>  0:33
    CLOCK: [2018-01-16 Tue 10:03]--[2018-01-16 Tue 10:58] =>  0:55
 ** Comparing NI and mines Text Adv
+   CLOCK: [2018-01-16 Tue 16:05]--[2018-01-16 Tue 16:26] =>  0:21
    CLOCK: [2018-01-16 Tue 12:02]--[2018-01-16 Tue 12:29] =>  0:27
+
 
 -Classes:
 create a Class to store vars inside them and use them only for that one
