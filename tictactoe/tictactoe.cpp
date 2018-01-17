@@ -38,39 +38,67 @@ int main(){
              << "       |    " << "   |      \n";
         cout << endl << endl;
         cin >> player;
-        /*--------------------------------------still working on
-        while (player == 1){
+        if (player == 1){
             space1 = "X";
+        restart:;
             cpu = rand() % 9 + 1;
             if (space2 != "X" && cpu == 2){
                 space2 = "O";
             }
-            else while (space2 == "X" && cpu  == 2){
-                    continue;
+            else while (space2 == "X" && cpu  == 2 ||  space2 == "O" && cpu == 2){
+                    cpu = rand() % 9 + 1;
+                    goto restart;
                 }
             if(space3 != "X" && cpu == 3){
                 space3 = "O";
             }
+            else while (space3 == "X" && cpu  == 3 ||  space3 == "O" && cpu == 3){
+                    cpu = rand() % 9 + 1;
+                    goto restart;
+                }
             if(space4 != "X" && cpu == 4){
                 space4 = "O";
             }
+            else while (space4 == "X" && cpu  == 4 ||  space4 == "O" && cpu == 4){
+                    cpu = rand() % 9 + 1;
+                    goto restart;
+                }
             if(space5 != "X" && cpu == 5){
                 space5 = "O";
             }
+            else while (space5 == "X" && cpu  == 5 ||  space5 == "O" && cpu == 5){
+                    cpu = rand() % 9 + 1;
+                    goto restart;
+                }
             if(space6 != "X" && cpu == 6){
                 space6 = "O";
             }
+            else while (space6 == "X" && cpu  == 6 ||  space6 == "O" && cpu == 6){
+                    cpu = rand() % 9 + 1;
+                    goto restart;
+                }
             if(space7 != "X" && cpu == 7){
                 space7 = "O";
             }
+            else while (space7 == "X" && cpu  == 7 ||  space7 == "O" && cpu == 7){
+                    cpu = rand() % 9 + 1;
+                    goto restart;
+                }
             if(space8 != "X" && cpu == 8){
                 space8 = "O";
             }
+            else while (space8 == "X" && cpu  == 8 ||  space8 == "O" && cpu == 8){
+                    cpu = rand() % 9 + 1;
+                    goto restart;;
+                }
             if(space9 != "X" && cpu == 9){
                 space9 = "O";
             }
+            else while (space9 == "X" && cpu  == 9 ||  space9 == "O" && cpu == 9){
+                    cpu = rand() % 9 + 1;
+                    goto restart;
+                }
         }
-        */
         if (player == 2){
             space2 = "X";
             cpu = rand() % 9 + 1;
