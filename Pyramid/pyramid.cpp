@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main(){
+9int main(){
 
 //--------------------------------Rows of "*" (Copy)
 
