@@ -182,35 +182,36 @@ if all goes well you should see the hello world.
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-18 Thu 18:41]
+#+CAPTION: Clock summary at [2018-01-19 Fri 13:23]
 | <75>                                                                        |         |      |   |       |
 | Headline                                                                    | Time    |      |   |     % |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| *Total time*                                                                | *38:20* |      |   | 100.0 |
+| *Total time*                                                                | *42:16* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| Tasks                                                                       | 38:20   |      |   | 100.0 |
-| Setup CMake                                                                 |         | 0:46 |   |   2.0 |
-| Reviewing yesterdays Grades task                                            |         | 2:13 |   |   5.8 |
-| Copy across hello world from wt (And how to run wt)                         |         | 0:50 |   |   2.2 |
-| Adding numbers on wt                                                        |         | 0:44 |   |   1.9 |
-| Watch tutorials on youtube                                                  |         | 2:03 |   |   5.3 |
-| Attempt to use wt solo                                                      |         | 1:24 |   |   3.7 |
-| Practice C++                                                                |         | 1:28 |   |   3.8 |
-| Reading "Learn C++"                                                         |         | 4:13 |   |  11.0 |
-| Cleaning up tasks.org                                                       |         | 0:59 |   |   2.6 |
-| Making 21 game                                                              |         | 4:38 |   |  12.1 |
-| Comparing NI and mines 21 games                                             |         | 0:37 |   |   1.6 |
-| Discussing a task with NI                                                   |         | 1:59 |   |   5.2 |
-| Creating a simple shopping checkout                                         |         | 2:57 |   |   7.7 |
-| Studying different loops etc etc                                            |         | 0:32 |   |   1.4 |
-| Writing a text base adventure                                               |         | 3:45 |   |   9.8 |
-| Comparing NI and mines Text Adv                                             |         | 0:48 |   |   2.1 |
-| Trying to get ERC to work                                                   |         | 1:37 |   |   4.2 |
-| Writing Tic Tac Toe game                                                    |         | 3:25 |   |   8.9 |
+| Tasks                                                                       | 42:16   |      |   | 100.0 |
+| Setup CMake                                                                 |         | 0:46 |   |   1.8 |
+| Reviewing yesterdays Grades task                                            |         | 2:13 |   |   5.2 |
+| Copy across hello world from wt (And how to run wt)                         |         | 0:50 |   |   2.0 |
+| Adding numbers on wt                                                        |         | 0:44 |   |   1.7 |
+| Watch tutorials on youtube                                                  |         | 2:03 |   |   4.9 |
+| Attempt to use wt solo                                                      |         | 1:24 |   |   3.3 |
+| Practice C++                                                                |         | 1:28 |   |   3.5 |
+| Reading "Learn C++"                                                         |         | 5:08 |   |  12.1 |
+| Cleaning/Updating tasks.org                                                 |         | 1:15 |   |   3.0 |
+| Making 21 game                                                              |         | 4:38 |   |  11.0 |
+| Comparing NI and mines 21 games                                             |         | 0:37 |   |   1.5 |
+| Discussing a task with NI                                                   |         | 2:30 |   |   5.9 |
+| Creating a simple shopping checkout                                         |         | 2:57 |   |   7.0 |
+| Studying different loops etc etc                                            |         | 0:32 |   |   1.3 |
+| Writing a text base adventure                                               |         | 3:45 |   |   8.9 |
+| Comparing NI and mines Text Adv                                             |         | 0:48 |   |   1.9 |
+| Trying to get ERC to work                                                   |         | 1:37 |   |   3.8 |
+| Writing Tic Tac Toe game                                                    |         | 3:25 |   |   8.1 |
 | Comparing NI and mines TicTacToe                                            |         | 0:12 |   |   0.5 |
-| Look for C++ tasks online                                                   |         | 0:19 |   |   0.8 |
-| Writing a Number Pyramid                                                    |         | 2:18 |   |   6.0 |
-| Comparing NI and mines Pyamid                                               |         | 0:33 |   |   1.4 |
+| Look for C++ tasks online                                                   |         | 0:19 |   |   0.7 |
+| Writing a Number Pyramid                                                    |         | 2:18 |   |   5.4 |
+| Comparing NI and mines Pyramid                                              |         | 0:33 |   |   1.3 |
+| Writing a Bar Chart                                                         |         | 2:14 |   |   5.3 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end:
 
@@ -259,6 +260,7 @@ cd ~/Development/HelloWorld/hellowt/build && CMAKE_INCLUDE_PATH=/home/patrick/lo
 -Try to incorporate all that I've learned
 
 ** Reading "Learn C++"
+   CLOCK: [2018-01-19 Fri 09:06]--[2018-01-19 Fri 10:01] =>  0:55
    CLOCK: [2018-01-18 Thu 16:12]--[2018-01-18 Thu 17:03] =>  0:51
    CLOCK: [2018-01-18 Thu 10:51]--[2018-01-18 Thu 11:40] =>  0:49
    CLOCK: [2018-01-16 Tue 09:16]--[2018-01-16 Tue 09:49] =>  0:33
@@ -269,18 +271,22 @@ cd ~/Development/HelloWorld/hellowt/build && CMAKE_INCLUDE_PATH=/home/patrick/lo
 
 -Completed Chapter 1
 -Completed Chapter 2
+-Completed Chapter 3
 -Leaving the questions until the end
 -Upto: 1.11 (Done)
 -Upto: 2.9 (Done)
 -Chapter 2 questions need to be done
--Upto: 3.
-** Cleaning up tasks.org
+-Upto: 3.3 (Done)
+-Chapter 3 need to be done
+** Cleaning/Updating tasks.org
+   CLOCK: [2018-01-19 Fri 13:07]--[2018-01-19 Fri 13:23] =>  0:16
    CLOCK: [2018-01-17 Wed 15:07]--[2018-01-17 Wed 15:28] =>  0:21
    CLOCK: [2018-01-16 Tue 12:29]--[2018-01-16 Tue 12:51] =>  0:22
    CLOCK: [2018-01-11 Thu 13:44]--[2018-01-11 Thu 14:00] =>  0:16
 
-- Accidently added something to the bottom of tasks
--Don't know how to get rid of it
+//- Accidently added something to the bottom of tasks
+//- Don't know how to get rid of it
+- Got rid of it
 ** Making 21 game
    CLOCK: [2018-01-12 Fri 16:32]--[2018-01-12 Fri 17:04] =>  0:32
    CLOCK: [2018-01-12 Fri 15:12]--[2018-01-12 Fri 16:08] =>  0:56
@@ -306,6 +312,7 @@ cd ~/Development/HelloWorld/hellowt/build && CMAKE_INCLUDE_PATH=/home/patrick/lo
      } while ( !condition );
 - break;
 ** Discussing a task with NI
+   CLOCK: [2018-01-19 Fri 10:03]--[2018-01-19 Fri 10:34] =>  0:31
    CLOCK: [2018-01-18 Thu 10:22]--[2018-01-18 Thu 10:43] =>  0:21
    CLOCK: [2018-01-18 Thu 09:51]--[2018-01-18 Thu 10:09] =>  0:18
    CLOCK: [2018-01-17 Wed 11:22]--[2018-01-17 Wed 11:30] =>  0:08
@@ -385,36 +392,8 @@ int main()
 - cpu chooses empty space
 - output winner
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ** Comparing NI and mines TicTacToe
    CLOCK: [2018-01-17 Wed 16:09]--[2018-01-17 Wed 16:21] =>  0:12
-
 
 ** Look for C++ tasks online
    CLOCK: [2018-01-18 Thu 12:09]--[2018-01-18 Thu 12:28] =>  0:19
@@ -434,9 +413,16 @@ int main()
 - Do all examples in this manner
 - See if i can incorperate into old projects
 
-** Comparing NI and mines Pyamid
+** Comparing NI and mines Pyramid
    CLOCK: [2018-01-18 Thu 15:49]--[2018-01-18 Thu 16:05] =>  0:16
    CLOCK: [2018-01-18 Thu 14:19]--[2018-01-18 Thu 14:23] =>  0:04
    CLOCK: [2018-01-18 Thu 13:39]--[2018-01-18 Thu 13:52] =>  0:13
 
-**                                                                        :e:
+** Writing a Bar Chart
+   CLOCK: [2018-01-19 Fri 10:43]--[2018-01-19 Fri 12:57] =>  2:14
+
+- Create a blank chart
+- User input names
+- user input age
+- User create a bar based on age
+- Incorporate bar into chart
