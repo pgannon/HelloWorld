@@ -23,6 +23,7 @@ int main(){
     int statPoints = 20;
     string gameState = "setup";
     Character player;
+    string text;
 
     cout << "Please enter your name..." << endl;
     cin >> name;
@@ -63,7 +64,32 @@ int main(){
         }
         else if  (player.intel + player.dex + player.strength <= 20){
             cout << "Your stats have been set\n\n";
+            gameState = "intro";
             break;
         }
+    }
+
+    while (gameState == "intro"){
+        cout << "Slowly your eyes open as your one man boat approaches the shore.\n"
+             << "With nothing but the clothes on your back. You dont know where you are, or where you've come from.\n"
+             << "As you get closer you notice a man in the distance, he seems to be armed with a sword.\n"
+             << "He hasn't seen you yet...\n\n";
+
+        cout << "What would you like to do?\n";
+        cout << "| Talk | Run |\n";
+        cin >> text;
+
+        if (text == "run" || text == "Run"){
+            cout <<  "\nAs soon as your boat makes contact with land,"
+                 << " without hesitation you hop out and sprint into the wilderness.\n\n"
+                 << "Man:- \"Hey! Wait!!\"\n";
+        }
+
+        if (text == "talk" || text == "Talk"){
+            cout << "\nYour boat comes to a halt as you shout and signal for the man.\n"
+                 << "He sees you and signals back.\n";
+        }
+
+        break;
     }
 }
