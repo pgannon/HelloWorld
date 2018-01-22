@@ -10,6 +10,8 @@ class Character {
 public:
     int health;
     int mana;
+    int xp = 0;
+    int lvl = 1;
 };
 
 int main(){
@@ -19,14 +21,14 @@ int main(){
     int strength = 0;
     int intel = 0;
     int dex = 0;
-    int health = 100;
-    int mana = 100;
+    int battleXp = 0;
     int ranCount;
     string statsComplete = "no";
     string gameLoop = "intro";
     Character player;
     Character enemy;
     string fighting;
+    
     player.health = 50;
     player.mana = 25;
     enemy.health = 50;
@@ -101,9 +103,10 @@ int main(){
                 }
 
                 while (fighting == "fightingThief"){
-                    cout << "Theif > HP --| " << enemy.health << " | "
+                    cout <<"Lvl.1 - " <<  "Theif > HP --| " << enemy.health << " | "
                          << "MA --| " << enemy.mana << " |\n"  << endl;
-                    cout << name << " > HP --| " << player.health << " | "
+                    cout << "Lvl." << player.lvl << " - " << name << " > HP --| "
+                         << player.health << " | "
                          << "MA --| " << player.mana << "|\n"  << endl;
                     cout << "Your options are:\n| Attack | Dodge | Run |\n\n";
                     cin >> text;
@@ -145,11 +148,24 @@ int main(){
                         }
 
                         if (enemy.health <= 0){
-                            cout << "Theif > HP --| XX | " << "MA --| "
+                            cout <<"Lvl.1 - "  << "Theif > HP --| XX | " << "MA --| "
                                  << enemy.mana << " |\n"  << endl;
-                            cout << name << " > HP --| " << player.health << " | "
+                            cout << "Lvl." << player.lvl  << " - "  << name
+                                 << " > HP --| " << player.health << " | "
                                  << "MA --| " << player.mana << "|\n"  << endl;
-                            cout << name << "Defeated Theif!\n" << endl;
+                            battleXp = rand() % 50 + 1;
+                            player.xp += battleXp;
+                            cout << name << "Defeated Theif!\n\n"
+                                 << name  << " Gained > " << battleXp << " XP\n"
+                                 << name << " | Lvl." << player.lvl << " | " << player.xp
+                                 << " / 25\n\n";
+                            if (player.xp >= 25){
+                                player.lvl += 1;
+                                cout << "Level Up!\nPat Lvl." << player.lvl
+                                     << "\n\n";
+                                cout << name << " | Lvl." << player.lvl
+                                     << " | " << player.xp << " / 100\n\n";
+                            }
                             cout << "Theif:- \"uuurgh...you may have defeated me!"
                                  << " But you'll never defeat the Guiiiild!.... \n\n";
                             break;
