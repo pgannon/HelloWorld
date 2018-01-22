@@ -10,6 +10,7 @@ public:
     int intel = 0;
     int dex = 0;
     int lvl = 1;
+    int xp = 0;
 };
 
 
@@ -138,7 +139,7 @@ int main(){
                         }
 
                         
-                        if (enemy.hp < 0){
+                        if (enemy.hp <= 0 || player.hp <= 0){
                             fighting = "noFight";
                             break;
                         }
@@ -161,9 +162,14 @@ int main(){
 
                  if (ranCount == 11){
                      cout << "Rat Attacked " << name  << "!" << endl;
-                     cout << "(Strength) Critical Hit!\n*"
+                     cout << "Critical Hit!\n*"
                           << 4 + ranCount << " Damage*\n" << endl;
-                     player.hp -= 4 + ranCount;
+                     player.hp -= 3 + ranCount;
+                 }
+
+                 if (enemy.hp <= 0 || player.hp <= 0){
+                     fighting = "noFight";
+                     break;
                  }
 
                  if (enemy.hp > 0){
@@ -171,9 +177,33 @@ int main(){
                  }
             }
 
-            if (enemy.hp <= 0){
+            if (player.hp <= 0){
+                cout << "Rat Defeated " << name << endl
+                     << "Game Over!\n\n";
 
+                return 0;
+            }
+
+            if (enemy.hp <= 0){
+                ranCount = rand() % 20 + 1;
                 cout << name  << " Defeated Rat!\n\n";
+                player.xp += ranCount;
+                cout << name << " Gained " << ranCount << "XP!\n\n";
+                cout << "Lvl." << player.lvl << " - " << name
+                     << " ==| " << player.xp << " / 10 XP |\n\n";
+                if (player.xp >= 10){
+                    cout << name << " Leveled Up!\n\n";
+                    player.lvl += 1;
+                    player.intel += 1;
+                    player.strength += 1;
+                    player.dex += 1;
+                    cout << "Intelligence-----| " << player.intel << "\n"
+                         << "Strength---------| " << player.strength << "\n"
+                         << "Dexterity--------| " << player.dex << "\n\n";
+
+                    cout << "Lvl." << player.lvl << " - " << name
+                         << " ==| " << player.xp << " / 25 XP |\n\n"; 
+                }
             }
         }
 
