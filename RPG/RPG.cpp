@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "cardgame.hpp"
 
 using namespace std;
 
@@ -75,7 +76,7 @@ int main(){
             break;
         }
     }
-
+    
     while (gameState == "intro"){
         cout << "Slowly your eyes open as your one man boat approaches the shore.\n"
              << "With nothing but the clothes on your back. You dont know where you are, or where you've come from.\n"
@@ -138,7 +139,6 @@ int main(){
                             enemy.hp -= player.strength + ranCount;
                         }
 
-                        
                         if (enemy.hp <= 0 || player.hp <= 0){
                             fighting = "noFight";
                             break;
@@ -221,21 +221,54 @@ int main(){
                  << "2. Yes, that does sound familiar\n"
                  << "3. Do you not have better things to do?\n\n";
             cin >> dia;
-            
+
             if (dia == 1){
                 cout << name  << ":- \"No, I don't know where I came from...\"\n\n";
-                cout << "Man:- \"Hmm, you must of hit your head at somepoint\"\n\n";
+                cout << "Man:- \"Hmm, you must of hit your head at somepoint\"\n";
+                cout << "Man:- \"Come with me and I'll take you to the closest village\"\n\n";
+                cout << "As you walk, the man ask's various questions to try and trigger your memory\n"
+                     << "Though it's to no avail. Even though its been hours..\n\n";
             }
             if (dia == 2){
                 cout << name  << ":- \"Yes, that does sound familiar\"\n\n";
-                cout << "Man:- \"Wow, you're the first survivor ive encountered\"\n\n";
+                cout << "Man:- \"Wow, you're the first survivor ive encountered\"\n";
+                cout << "Man:- \"You must be starving, I'll take you to the closest village\"\n\n";
+                cout << "You walk with the man for hours, eating the rations he provided as you walk.\n\n";
             }
             if (dia == 3){
                 cout << name << ":- \"Do you not have better things to do?\"\n\n";
-                cout << "Man:- \"Excuse me? My time is best spent doing what i can to help those in need\"\n\n";
+                cout << "Man:- \"Excuse me? My time is best spent doing what i can to help those in need\"\n";
+                cout << "Man:- \"Hm..as much as I'd like to leave you here. I can't in the shape you're in...\"\n";
+                cout << "Man:- \"I'll help you get to the closest village\"\n\n";
+                cout << "You travel for hours, stumbling the whole way. But like he said,"
+                     << "the Man got you to the village. Even though not one of you uttered a single word the whole way\n\n";
             }
         }
 
+        cout << "You finally reach the closest village and see a doctor. "
+             << "Once you've found a bed you part ways with the man and fall straight to sleep.\n"
+             << "\nYou wake up the next day feeling good but still no memory of yesterday\n"
+             << "You explore the town, before you know it you find yourself in a bar\n"
+             << "As you walk in you realise theres only two people, a man sitting in the corner shuffling a deck of cards"
+             << ", and the barmaid\n\n";
+        cout << "Your options are:\n| Drink | Cards |\n";
+                cin >> text;
+        if (text == "cards" || text == "Cards"){
+
+            cout << "\n\nYou slowly walk up to man. Analysing him as you approach...\n"
+                 << "\nMan:- \"You wann play?\"\n\n";
+
+            cout << "Your options are:\n| Yes | No |\n";
+            cin >> text;
+            if (text == "yes" || text == "y"){
+                cout << endl << endl;
+                cardgame();
+            }
+
+            if (text == "no" || text == "n"){
+                cout << "\n\nMan:- \"Okay then, keep walking...\"";
+            }
+        }
         break;
     }
 }
