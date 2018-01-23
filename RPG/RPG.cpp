@@ -13,12 +13,6 @@ public:
     int xp = 0;
 };
 
-
-
-
-
-
-
 int main(){
 
     string name;
@@ -29,6 +23,7 @@ int main(){
     string fighting;
     string text;
     int ranCount;
+    int dia;
 
     srand(time(NULL));
 
@@ -209,9 +204,31 @@ int main(){
 
         if (text == "talk" || text == "Talk"){
             cout << "\nYour boat comes to a halt as you shout and signal for the man.\n"
-                 << "He sees you and signals back.\n";
+                 << "He sees you and signals back.\n\n";
 
-            cout << "Man:- \"\"";
+            cout << "Man:- \"I heard of a shipwreck a few miles out from here,"
+                 << " I'm waiting around to see if anyone washes ashore\"\n\n";
+
+            cout << "Man:- \"You wouldn't happen to have come from that same shipwreck?\"\n\n";
+
+            cout << "Your options are:\n\n"
+                 << "1. No, I don't know where I came from...\n"
+                 << "2. Yes, that does sound familiar\n"
+                 << "3. Do you not have better things to do?\n\n";
+            cin >> dia;
+            
+            if (dia == 1){
+                cout << name  << ":- \"No, I don't know where I came from...\"\n\n";
+                cout << "Man:- \"Hmm, you must of hit your head at somepoint\"\n\n";
+            }
+            if (dia == 2){
+                cout << name  << ":- \"Yes, that does sound familiar\"\n\n";
+                cout << "Man:- \"Wow, you're the first survivor ive encountered\"\n\n";
+            }
+            if (dia == 3){
+                cout << name << ":- \"Do you not have better things to do?\"\n\n";
+                cout << "Man:- \"Excuse me? My time is best spent doing what i can to help those in need\"\n\n";
+            }
         }
 
         break;

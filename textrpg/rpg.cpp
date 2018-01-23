@@ -90,9 +90,12 @@ int main(){
                 cout << "(Intel) Straight away you recognise that he's a member of"
                      << " the thieves guild\nWhat would you like to do?\n\n";
                 cout << "Your options are:\n| Chat | Attack | Run |\n\n";
-                cin >> text;
+                cin >> text; 
+            }else{
+                
+            }
 
-                if (text == "attack"){
+            if (text == "attack"){
                     cout << name  << " Attacked Man!\n"
                          << "*25 Damage!*\n\n"
                          << "Man revealed himself to be Thief!\n\n"
@@ -172,7 +175,6 @@ int main(){
                         }
                     }
                 }
-            }
         }
 
         if (text == "walk"){
