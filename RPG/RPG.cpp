@@ -14,7 +14,6 @@ public:
 };
 
 int main(){
-
     string name;
     int statPoints = 20;
     string gameState = "setup";
@@ -27,6 +26,12 @@ int main(){
 
     srand(time(NULL));
 
+    //string inv[3] = {"knife", "gold", "torch"};
+    //for (int i=0; i< 2; i++){
+        //   cout << inv[i] << "\n";
+        //}
+    //cout << inv[i] << "\n";
+    cout << endl;
     cout << "Please enter your name..." << endl;
     cin >> name;
     cout << "\n\nWell " << name << ", let's start your quest...\n"
