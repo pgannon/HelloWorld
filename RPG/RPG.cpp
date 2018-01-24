@@ -241,7 +241,7 @@ int main(){
                 cout << "Man:- \"Hm..as much as I'd like to leave you here. I can't in the shape you're in...\"\n";
                 cout << "Man:- \"I'll help you get to the closest village\"\n\n";
                 cout << "You travel for hours, stumbling the whole way. But like he said,"
-                     << "the Man got you to the village. Even though not one of you uttered a single word the whole way\n\n";
+                     << "the Man got you to thae village. Even though not one of you uttered a single word the whole way\n\n";
             }
         }
 
@@ -256,7 +256,7 @@ int main(){
         if (text == "cards" || text == "Cards"){
 
             cout << "\n\nYou slowly walk up to man. Analysing him as you approach...\n"
-                 << "\nMan:- \"You wann play?\"\n\n";
+                 << "\nMan:- \"You wanna play?\"\n\n";
 
             cout << "Your options are:\n| Yes | No |\n";
             cin >> text;
