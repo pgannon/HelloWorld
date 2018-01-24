@@ -17,6 +17,7 @@ int main(){
     string gameState = "draw";
     Player you;
     Player cpu;
+    string text;
 
     you.cards[0] = rand() % 11 + 1;
     you.cards[1] = rand() % 11 + 1;
@@ -36,11 +37,24 @@ int main(){
 
     //srand(time(NULL));
 
-    while (gameState == "draw"){
+    if (gameState == "draw"){
+
+        cout << "BlackJack\n\nDraw 2\n\n";
 
         cout << "YOU|------| " << you.cards[0] << " | " << you.cards[1] << " |\n";
-        cout << "CPU|------| " << cpu.cards[0] << " | " << cpu.cards[1] << " |\n";
+        cout <<"--------------------------------------------------\n";
+        cout << "CPU|------| ** | ** |\n\n";
 
-        return 0;
+        cout << "Hit or Stay?\n";
+    }
+
+    cin >> text;
+
+    if (text == hit){
+        gameState = "turn2";
+    }
+    if (gameState == "turn2"){
+
+        
     }
 }
