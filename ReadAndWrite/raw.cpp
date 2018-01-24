@@ -1,17 +1,44 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include "test.hpp"
 
 using namespace std;
 
-int main(){
-    ofstream myfile;
+int writef()
+{
+    ofstream myfile ("example.txt");
+
+    if (myfile.is_open())
+    {
+        myfile << "Heres some text\n";
+
+        myfile << "Whoa, more text!\n";
+
+        myfile.close();
+    }
+
+    return 0;
+}
+
+int readf()
+{
     string line;
 
-    myfile.open ("example.txt");
+    ifstream myfile ("example.txt");
 
-    myfile << "Here's some more fantastic text for you to look at!\n\n";
+    if (myfile.is_open())
+    {
+        while ( getline (myfile,line) )
+        {
+            cout << line << '\n';
+        }
+        myfile.close();
+    }
+    
+    return 0;
+}
 
-    test();
+int main () {
+    writef();
+    readf();
 }
