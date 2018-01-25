@@ -34,7 +34,7 @@ int readf()
         }
         myfile.close();
     }
-    
+
     return 0;
 }
 

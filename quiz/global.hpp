@@ -2,4 +2,5 @@
 #define MY_GLOBALS_H
 
 extern int score;
+extern int highScore;
 #endif

@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <ctime>
 #include "global.hpp"
+#include <fstream>
 
 using namespace std;
 
@@ -11,11 +12,9 @@ int num1 = 0;
 int num2 = 0;
 int answer = 0;
 string section = "addition";
-//int score = 0;
 
 int level1(){
-    //srand(time(NULL));
-
+ 
     int temp = score;
 
     cout << "\nMath Quiz\n--\nLevel 1 - Addition\n--\n";
@@ -48,6 +47,10 @@ int level1(){
             questnum = 1;
             break;
         }
+    }
+
+    if (score < highScore){
+        highScore = score;
     }
 
     cout << "\n--\nLevel 2 - Subtraction\n--\n";
