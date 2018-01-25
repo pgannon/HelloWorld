@@ -182,49 +182,51 @@ if all goes well you should see the hello world.
 * Tasks
 
 #+begin: clocktable :maxlevel 3 :scope subtree :indent nil :emphasize nil :scope file :narrow 75 :formula %
-#+CAPTION: Clock summary at [2018-01-25 Thu 12:06]
+#+CAPTION: Clock summary at [2018-01-25 Thu 17:35]
 | <75>                                                                        |         |      |   |       |
 | Headline                                                                    | Time    |      |   |     % |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| *Total time*                                                                | *66:49* |      |   | 100.0 |
+| *Total time*                                                                | *71:10* |      |   | 100.0 |
 |-----------------------------------------------------------------------------+---------+------+---+-------|
-| Tasks                                                                       | 66:49   |      |   | 100.0 |
+| Tasks                                                                       | 71:10   |      |   | 100.0 |
 | Setup CMake                                                                 |         | 0:46 |   |   1.1 |
-| Reviewing yesterdays Grades task                                            |         | 2:13 |   |   3.3 |
+| Reviewing yesterdays Grades task                                            |         | 2:13 |   |   3.1 |
 | Copy across hello world from wt (And how to run wt)                         |         | 0:50 |   |   1.2 |
-| Adding numbers on wt                                                        |         | 0:44 |   |   1.1 |
-| Watch tutorials on youtube                                                  |         | 2:03 |   |   3.1 |
-| Attempt to use wt solo                                                      |         | 1:24 |   |   2.1 |
-| Practice C++                                                                |         | 1:28 |   |   2.2 |
-| Reading "Learn C++"                                                         |         | 6:58 |   |  10.4 |
-| Cleaning/Updating tasks.org                                                 |         | 2:45 |   |   4.1 |
-| Making 21 game                                                              |         | 4:38 |   |   6.9 |
+| Adding numbers on wt                                                        |         | 0:44 |   |   1.0 |
+| Watch tutorials on youtube                                                  |         | 2:03 |   |   2.9 |
+| Attempt to use wt solo                                                      |         | 1:24 |   |   2.0 |
+| Practice C++                                                                |         | 1:28 |   |   2.1 |
+| Reading "Learn C++"                                                         |         | 6:58 |   |   9.8 |
+| Cleaning/Updating tasks.org                                                 |         | 2:45 |   |   3.9 |
+| Making 21 game                                                              |         | 4:38 |   |   6.5 |
 | Comparing NI and mines 21 games                                             |         | 0:37 |   |   0.9 |
-| Discussing a task with NI                                                   |         | 4:40 |   |   7.0 |
-| Creating a simple shopping checkout                                         |         | 2:57 |   |   4.4 |
-| Studying different loops etc etc                                            |         | 0:32 |   |   0.8 |
-| Writing a text base adventure                                               |         | 5:03 |   |   7.6 |
-| Comparing NI and mines Text Adv                                             |         | 0:48 |   |   1.2 |
-| Trying to get ERC to work                                                   |         | 1:37 |   |   2.4 |
-| Writing Tic Tac Toe game                                                    |         | 3:25 |   |   5.1 |
+| Discussing a task with NI                                                   |         | 4:40 |   |   6.6 |
+| Creating a simple shopping checkout                                         |         | 2:57 |   |   4.1 |
+| Studying different loops etc etc                                            |         | 0:32 |   |   0.7 |
+| Writing a text base adventure                                               |         | 5:03 |   |   7.1 |
+| Comparing NI and mines Text Adv                                             |         | 0:48 |   |   1.1 |
+| Trying to get ERC to work                                                   |         | 1:37 |   |   2.3 |
+| Writing Tic Tac Toe game                                                    |         | 3:25 |   |   4.8 |
 | Comparing NI and mines TicTacToe                                            |         | 0:12 |   |   0.3 |
-| Look for C++ tasks online                                                   |         | 0:19 |   |   0.5 |
-| Writing a Number Pyramid                                                    |         | 2:18 |   |   3.4 |
+| Look for C++ tasks online                                                   |         | 0:19 |   |   0.4 |
+| Writing a Number Pyramid                                                    |         | 2:18 |   |   3.2 |
 | Comparing NI and mines Pyramid                                              |         | 0:33 |   |   0.8 |
-| Writing a Bar Chart                                                         |         | 3:32 |   |   5.3 |
+| Writing a Bar Chart                                                         |         | 3:32 |   |   5.0 |
 | Comparing NI and mines Bar Charts                                           |         | 0:05 |   |   0.1 |
-| Writing New RPG                                                             |         | 4:36 |   |   6.9 |
-| Discussing NI and mines New RPG                                             |         | 3:21 |   |   5.0 |
-| Researching Arrays                                                          |         | 0:27 |   |   0.7 |
-| Looking up C++ online for RPG                                               |         | 0:31 |   |   0.8 |
-| Writing a Travel Cal                                                        |         | 1:55 |   |   2.9 |
+| Writing New RPG                                                             |         | 4:36 |   |   6.5 |
+| Discussing NI and mines New RPG                                             |         | 3:21 |   |   4.7 |
+| Researching Arrays                                                          |         | 0:27 |   |   0.6 |
+| Looking up C++ online for RPG                                               |         | 0:31 |   |   0.7 |
+| Writing a Travel Cal                                                        |         | 1:55 |   |   2.7 |
 | Discussing NI and mines Travel Cal                                          |         | 0:50 |   |   1.2 |
-| Try to write new 21 game                                                    |         | 1:33 |   |   2.3 |
+| Try to write new 21 game                                                    |         | 1:33 |   |   2.2 |
 | Comparing NI and mines New 21 Game                                          |         | 0:15 |   |   0.4 |
-| Writing something that can read and write files                             |         | 0:40 |   |   1.0 |
+| Writing something that can read and write files                             |         | 0:40 |   |   0.9 |
 | Comparing NI and mines RaW                                                  |         | 0:14 |   |   0.3 |
-| Writing a Math Quiz                                                         |         | 1:28 |   |   2.2 |
-| Comparing NI and mines Math Quiz                                            |         | 0:32 |   |   0.8 |
+| Writing a Math Quiz                                                         |         | 2:53 |   |   4.1 |
+| Comparing NI and mines Math Quiz                                            |         | 1:00 |   |   1.4 |
+| Reading "An Introduction to the Imperative Part of C++"                     |         | 0:13 |   |   0.3 |
+| Trying to understand Reading specific lines                                 |         | 2:15 |   |   3.2 |
 #+TBLFM: $5='(org-clock-time% @3$2 $2..$4);%.1f
 #+end:
 
@@ -525,12 +527,23 @@ string inv[3] = {"knife", "gold", "torch"};
    CLOCK: [2018-01-24 Wed 16:34]--[2018-01-24 Wed 16:39] =>  0:05
    CLOCK: [2018-01-24 Wed 16:17]--[2018-01-24 Wed 16:26] =>  0:09
 ** Writing a Math Quiz
+   CLOCK: [2018-01-25 Thu 14:53]--[2018-01-25 Thu 15:19] =>  0:26
+   CLOCK: [2018-01-25 Thu 14:20]--[2018-01-25 Thu 14:39] =>  0:19
+   CLOCK: [2018-01-25 Thu 13:50]--[2018-01-25 Thu 14:04] =>  0:14
+   CLOCK: [2018-01-25 Thu 13:16]--[2018-01-25 Thu 13:42] =>  0:26
    CLOCK: [2018-01-25 Thu 11:37]--[2018-01-25 Thu 11:46] =>  0:09
    CLOCK: [2018-01-25 Thu 11:10]--[2018-01-25 Thu 11:33] =>  0:23
    CLOCK: [2018-01-25 Thu 09:52]--[2018-01-25 Thu 10:48] =>  0:56
 ** Comparing NI and mines Math Quiz
+   CLOCK: [2018-01-25 Thu 14:39]--[2018-01-25 Thu 14:53] =>  0:14
+   CLOCK: [2018-01-25 Thu 14:04]--[2018-01-25 Thu 14:11] =>  0:07
+   CLOCK: [2018-01-25 Thu 13:43]--[2018-01-25 Thu 13:50] =>  0:07
    CLOCK: [2018-01-25 Thu 11:48]--[2018-01-25 Thu 11:57] =>  0:09
    CLOCK: [2018-01-25 Thu 11:33]--[2018-01-25 Thu 11:35] =>  0:02
    CLOCK: [2018-01-25 Thu 10:48]--[2018-01-25 Thu 11:09] =>  0:21
 
 - Reference other Scripts: https://stackoverflow.com/questions/12290451/access-extern-variable-in-c-from-another-file
+** Reading "An Introduction to the Imperative Part of C++"
+   CLOCK: [2018-01-25 Thu 13:00]--[2018-01-25 Thu 13:13] =>  0:13
+** Trying to understand Reading specific lines
+   CLOCK: [2018-01-25 Thu 15:19]--[2018-01-25 Thu 17:34] =>  2:15
