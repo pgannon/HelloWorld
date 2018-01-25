@@ -5,6 +5,7 @@
 #include <fstream>
 #include "level1.hpp"
 #include "global.hpp"
+#include <sstream>
 
 using namespace std;
 
@@ -16,18 +17,20 @@ int hscore1 = 0;
 int hscore2 = 0;
 int hscore3 = 0;
 int hscore4 = 0;
+string test;
 
-int readf()
+int readf1()
 {
     string line;
 
-    ifstream myfile ("highscore.txt");
-
-    if (myfile.is_open())
+    ifstream myfile ("example.txt");
     {
         while ( getline (myfile,line) )
         {
             cout << line << '\n';
+            hscore1 = line;
+            
+            cout << test;
         }
         myfile.close();
     }
@@ -64,13 +67,21 @@ int writef()
             hscore4 = score;
         }
 
-        cout << "\nHigh-Scores:\n"
+        cout << "\nHigh-Scores:\n";
 
-        myfile << "1. " << name1 << ".....[" << hscore1 << "]\n";
-        myfile << "2. " << name2 << ".....[" << hscore2 << "]\n";
-        myfile << "3. " << name3 << ".....[" << hscore3 << "]\n";
-        myfile << "4. " << name4 << ".....[" << hscore4 << "]\n";
-        myfile.close();
+        myfile << name1 << endl;
+        myfile << hscore1 << endl;
+        myfile << name2 << endl;
+        myfile << hscore2 << endl;
+        myfile << name3 << endl;
+        myfile << hscore3 << endl;
+        myfile << name4 << endl;
+        myfile << hscore4 << endl;
+        //myfile << "1. " << name1 << ".....[" << hscore1 << "]\n";
+        // myfile << "2. " << name2 << ".....[" << hscore2 << "]\n";
+        // myfile << "3. " << name3 << ".....[" << hscore3 << "]\n";
+        // myfile << "4. " << name4 << ".....[" << hscore4 << "]\n";
+        // myfile.close();
     }
 
     return 0;
