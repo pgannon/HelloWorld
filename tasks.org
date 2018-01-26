@@ -547,3 +547,4 @@ string inv[3] = {"knife", "gold", "torch"};
    CLOCK: [2018-01-25 Thu 13:00]--[2018-01-25 Thu 13:13] =>  0:13
 ** Trying to understand Reading specific lines
    CLOCK: [2018-01-25 Thu 15:19]--[2018-01-25 Thu 17:34] =>  2:15
+** Ma Git Test
